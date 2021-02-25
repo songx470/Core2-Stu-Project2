@@ -19,6 +19,11 @@ p{
   font-size:1.4rem;
 }
 
+h3{
+  cursor:help;
+  font-size:3rem;
+}
+
 #myBtn{
   color:lightgrey;
   font-size:1.8rem;
@@ -26,41 +31,140 @@ p{
   top: 2%;
   left: 92%;
   text-align:center;
-  animation:infinite;
-  animation-name: float;
-  animation-duration: 8s;
   background-color:transparent;
   border:none;
+  animation-name: spin;
+  animation-duration: 3000ms;
+  animation-delay:5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 
 .s1{
   position: absolute;
   top: 30%;
   left: 17%;
+  animation-name: float;
+  animation-duration: 3s;
+  margin-top:-200px;
+  margin-bottom:-200px;
+  transition: transform .2s;
+  margin: 0 auto;
+  animation-delay: 0s;
 }
 
 .s2{
   position: absolute;
   top: 40%;
   left: 67%;
+  animation-name: float;
+  animation-duration: 3s;
+  margin-top:-200px;
+  margin-bottom:-200px;
+  transition: transform .2s;
+  margin: 0 auto;
+   animation-delay: 1s;
 }
 
 .s3{
   position: absolute;
   top: 50%;
   left: 37%;
+  animation-name: float;
+  animation-duration: 3s;
+  margin-top:-200px;
+  margin-bottom:-200px;
+  transition: transform .2s;
+  margin: 0 auto;
+   animation-delay: 2s;
 }
 
 .s4{
   position: absolute;
-  top: 60%;
-  left: 21%;
+  top: 65%;
+  left: 21%;;
+  animation-name: float;
+  animation-duration: 3s;
+  margin-top:-200px;
+  margin-bottom:-200px;
+  transition: transform .2s;
+  margin: 0 auto;
+   animation-delay: 3s;
 }
 
 .s5{
   position: absolute;
-  top: 70%;
+  top: 75%;
   left: 54%;
+  animation-name: float;
+  animation-duration: 3s;
+  margin-top:-200px;
+  margin-bottom:-200px;
+  transition: transform .2s;
+  margin: 0 auto;
+   animation-delay:4s;
 }
+
+.modal
+    {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 350px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+        cursor:help;
+
+    }
+    .modal-content
+    {
+        background-color: black;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+    .close
+    {
+        background-color: black;
+        color: #FFF;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover, .close:focus
+    {
+        background-color: black;
+        color: #FFF;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  25% {
+    transform: translatey(20px);
+  }
+
+  50% {
+    transform: translatey(0px);
+    font-color:white;
+  }
+  }
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 
 

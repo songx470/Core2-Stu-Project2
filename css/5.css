@@ -39,3 +39,24 @@ p {
   transform: translateY(-8px);
 }
 
+@media only screen and (max-width: 450px)
+    {
+
+p {
+  color:white;
+  font-family: 'Arvo', serif;
+  font-size: 3vw;
+  line-height: 4vw;
+  padding: 4vw;
+}
+
+.box {
+  margin-top:-0.4rem;
+  width: 80vw;
+  background: black;
+  border:solid;
+  border-color:white;
+  cursor: zoom-in;
+}
+
+}

@@ -22,3 +22,50 @@ a{
   text-decoration:none;
 }
 
+div.sticky {
+  color:white;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color:black;
+  top: 0;
+  border: solid;
+  text-align: center;
+  padding: 50px;
+  margin-top: 2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
+@media only screen and (max-width: 450px)
+    {
+p{
+  color:white;
+  font-family: 'Arvo', serif;
+  font-size:1rem;
+  word-spacing: 0.3rem;
+  margin-top:-1rem;
+  padding: 80px;
+  line-height: 28px;
+}
+
+a{
+  color:white;
+  font-family: 'Rajdhani', sans-serif;
+  font-size:1.1rem;
+  text-decoration:none;
+}
+
+div.sticky {
+  color:white;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color:black;
+  top: 0;
+  border: solid;
+  text-align: center;
+  padding: 30px;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+}
