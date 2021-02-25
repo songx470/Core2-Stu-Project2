@@ -125,12 +125,10 @@ h3{
         display: none;
         position: fixed;
         z-index: 1;
-        padding-top: 350px;
         left: 0;
         top: 0;
         overflow: auto;
-        background-color: black;
-        cursor:help;
+        background-color: rgba(0,0,0,0.9);
 
     }
     .modal-content
