@@ -1,0 +1,41 @@
+html,body {
+  margin: 0;
+  scroll-snap-type: y mandatory;
+  background-color:black;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+.box {
+  margin-top:5rem;
+  padding: 4vw;
+  width: 50vw;
+  background: black;
+  border:solid;
+  border-color:white;
+  cursor: zoom-in;
+}
+
+p {
+  color:white;
+  font-family: 'Arvo', serif;
+  font-size: 1.2vw;
+  line-height: 1.8vw;
+  padding: 8vw;
+}
+
+.animation {
+  transition: 0.5s ease;
+}
+
+.animation:hover {
+  box-shadow: 0 15px 25px -25px #1F1F46;
+  transform: translateY(-8px);
+}
+

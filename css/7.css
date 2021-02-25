@@ -1,0 +1,41 @@
+body{
+  background-repeat:no-repeat;
+  background-color:#FFF;
+}
+
+p{
+  font-family: 'Benne', serif;
+  margin: 0 auto;
+  padding: 200px;
+  line-height: 30px;
+}
+
+div{
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.hide{
+	font-family: 'Rajdhani', sans-serif;
+	text-align:center;
+}
+
+
+.zoom{
+  font-family: 'Rajdhani', sans-serif;
+  text-align:center;
+}
+
+h2{
+  font-family: 'Rajdhani', sans-serif;
+  margin-top: 0 auto;
+  padding: 200px;
+  line-height: 30px;
+  text-align:center;
+}
+
+h3{
+  font-family: 'Rajdhani', sans-serif;
+  margin-top: -300px;
+  line-height: 30px;
+  text-align:center;
+}

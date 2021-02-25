@@ -1,0 +1,66 @@
+body{
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-color:black;
+  background-image: url
+}
+
+a{
+  font-family: 'Arvo', serif;
+  font-size:1.6rem;
+  text-decoration:none;
+  color:#FFF;
+}
+
+p{
+  font-family: 'Rajdhani', sans-serif;
+  color:lightgrey;
+  text-align:center;
+  font-size:1.4rem;
+}
+
+#myBtn{
+  color:lightgrey;
+  font-size:1.8rem;
+  position: absolute;
+  top: 2%;
+  left: 92%;
+  text-align:center;
+  animation:infinite;
+  animation-name: float;
+  animation-duration: 8s;
+  background-color:transparent;
+  border:none;
+}
+
+.s1{
+  position: absolute;
+  top: 30%;
+  left: 17%;
+}
+
+.s2{
+  position: absolute;
+  top: 40%;
+  left: 67%;
+}
+
+.s3{
+  position: absolute;
+  top: 50%;
+  left: 37%;
+}
+
+.s4{
+  position: absolute;
+  top: 60%;
+  left: 21%;
+}
+
+.s5{
+  position: absolute;
+  top: 70%;
+  left: 54%;
+}
+
+

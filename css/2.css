@@ -1,0 +1,23 @@
+body{
+  background-size:100% 100%;
+  background-repeat: no-repeat;
+  background-color:black;
+  background-image: url;
+}
+
+p{
+  color:white;
+  font-family: 'Arvo', serif;
+  font-size:1.6rem;
+  word-spacing: 0.3rem;
+  margin-top:-10rem;
+  padding: 300px;
+  line-height: 60px;
+}
+
+a{
+  color:white;
+  font-family: 'Rajdhani', sans-serif;
+  font-size:1.58rem;
+  text-decoration:none;
+}

@@ -1,0 +1,211 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Garden of Forking Path</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Arvo&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Rajdhani&family=Rubik&display=swap" rel="stylesheet">  
+
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+<div class="s1">
+<a href="0.html" >the voice that had spoken in German
+</a>
+</div>
+
+<style> 
+.s1 {
+  animation:infinite;
+  animation-name: float;
+  animation-duration: 4.4s;
+  margin-top:-200px;
+  margin-bottom:-200px;
+  transition: transform .2s;
+  margin: 0 auto;
+  animation-delay: 0s;
+}
+
+.s2 {
+    animation:infinite;
+  animation-name: float;
+  animation-duration: 4.8s;
+  margin-top:-200px;
+  margin-bottom:-200px;
+  transition: transform .2s;
+  margin: 0 auto;
+   animation-delay: 1.5s;
+}
+
+.s3 {
+    animation:infinite;
+  animation-name: float;
+  animation-duration: 4.9s;
+  margin-top:-200px;
+  margin-bottom:-200px;
+  transition: transform .2s;
+  margin: 0 auto;
+   animation-delay: 3s;
+}
+
+.s4 {
+    animation:infinite;
+  animation-name: float;
+  animation-duration: 4.6s;
+  margin-top:-200px;
+  margin-bottom:-200px;
+  transition: transform .2s;
+  margin: 0 auto;
+   animation-delay: 4.5s;
+}
+
+.s5 {
+    animation:infinite;
+  animation-name: float;
+  animation-duration: 4.7s;
+  margin-top:-200px;
+  margin-bottom:-200px;
+  transition: transform .2s;
+  margin: 0 auto;
+   animation-delay: 5.5s;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  25% {
+    transform: translatey(-20px);
+  }
+  50% {
+    transform: translatey(0px);
+  }
+  75% {
+  transform: translatey(-20px);
+  }
+  100%{
+    transform: translatey(0px);
+  }
+
+</style>
+
+<div class="s2">
+<a href="1.html" >a station further on
+</a>
+</div>
+
+<div class="s3">
+<a href="2.html" >"Ashgrove"? and the coin
+</a>
+</div>
+
+<div class="s4">
+<a href="3.html" >the garden of Ts'ui Pen
+</a>
+</div>
+
+<div class="s5">
+<a href="4.html" >secret name of the city
+</a>
+</div>
+
+<style>
+    body
+    {
+         font-family: 'Rajdhani', sans-serif;
+    }
+    .modal
+    {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 350px;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: black;
+
+    }
+    .modal-content
+    {
+        background-color: black;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+    }
+    .close
+    {
+        background-color: black;
+        color: #FFF;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    .close:hover, .close:focus
+    {
+        background-color: black;
+        color: #FFF;
+        text-decoration: none;
+        cursor: pointer;
+    }
+</style>
+<button id="myBtn"><h3>☯︎</h3></button>
+<div id="myModal" class="modal">
+
+
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Finish the main story line and <a href="5.html" >unlock the puzzle</a>
+</a></p>
+  </div>
+
+<script>
+
+    var modal = document.getElementById("myModal");
+
+
+    var btn = document.getElementById("myBtn");
+
+
+    var span = document.getElementsByClassName("close")[0];
+
+
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+
+</html>
