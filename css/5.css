@@ -1,7 +1,10 @@
 html,body {
   margin: 0;
   scroll-snap-type: y mandatory;
-  background-color:black;
+  background:no-repeat center center fixed;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(circle, black, #080808);
+  background-image: url
 }
 
 section {
@@ -56,7 +59,6 @@ p {
   background: black;
   border:solid;
   border-color:white;
-  cursor: zoom-in;
 }
 
 }
