@@ -8,38 +8,66 @@ body{
 a{
   font-family: 'Arvo', serif;
   font-size:1.6rem;
+  font-style:normal;
   text-decoration:none;
-  color:#FFF;
+  color:dimgrey;
+    text-decoration: inherit;
    -webkit-transition: color 0.2s; 
         transition: color 0.2s; 
 
 }
 
     a:hover {
-        color: #7c7c7c;
+        color: white;
+        text-decoration:underline;
     }
+
+.Kicker {
+    color: dimgrey;
+}
+
+i.Kicker:hover {
+    color: black;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.text-light:hover + .Kicker {
+    color: black;
+    text-decoration: inherit;
+    transition: 0.1s;
+}
 
 p{
   font-family: 'Rajdhani', sans-serif;
-  color:lightgrey;
+  color:dimgrey;
   text-align:center;
   font-size:1.4rem;
 }
 
 h3{
   cursor:help;
-  font-size:3rem;
+  color:dimgrey;
+  font-size:4.5rem;
+  -webkit-transition: color 0.2s; 
+  transition: color 0.2s; 
+}
+
+h3:hover{
+  color: white;
 }
 
 #myBtn{
   -webkit-transition: color 0.2s; 
   transition: color 0.2s; 
-  color:lightgrey;
+  color:black;
   font-size:1.8rem;
   position: absolute;
-  top: 2%;
-  left: 92%;
-  text-align:center;
+  top: 4%;
+  left: 47.8%;
   background-color:transparent;
   border:none;
   animation-name: spin;
@@ -50,12 +78,12 @@ h3{
 }
 
 #myBtn:hover{
-  color: dimgrey;
+  color: white;
 }
 
 .s1{
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 17%;
   animation-name: float;
   animation-duration: 3s;
@@ -70,7 +98,7 @@ h3{
 
 .s2{
   position: absolute;
-  top: 40%;
+  top: 45%;
   left: 67%;
   animation-name: float;
   animation-duration: 3s;
@@ -83,8 +111,8 @@ h3{
 
 .s3{
   position: absolute;
-  top: 50%;
-  left: 37%;
+  top: 55%;
+  left: 34%;
   animation-name: float;
   animation-duration: 3s;
   margin-top:-200px;
@@ -96,7 +124,7 @@ h3{
 
 .s4{
   position: absolute;
-  top: 65%;
+  top: 70%;
   left: 21%;;
   animation-name: float;
   animation-duration: 3s;
@@ -109,7 +137,7 @@ h3{
 
 .s5{
   position: absolute;
-  top: 75%;
+  top: 80%;
   left: 54%;
   animation-name: float;
   animation-duration: 3s;
@@ -125,6 +153,8 @@ h3{
         display: none;
         position: fixed;
         z-index: 1;
+        height:100%;
+        width:100%;
         padding-top: 350px;
         left: 0;
         top: 0;
@@ -139,11 +169,12 @@ h3{
         padding: 20px;
         border: 1px solid #888;
         width: 80%;
+        font-style:normal;
     }
     .close
     {
         background-color: black;
-        color: #FFF;
+        color: dimgrey;
         float: right;
         font-size: 28px;
         font-weight: bold;

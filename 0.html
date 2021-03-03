@@ -29,20 +29,102 @@
 <div class="sticky"><a href="index.html">the voice that had spoken in German</a></div>
 
 <div class="puzzle">
-  <p>. . . and I hung up the phone. Immediately I recollected the voice that had spoken in German.
-In ten minutes I had developed my plan. The telephone directory gave me the name of the one person capable of passing on the information. He lived in a suburb of Fenton, less than half an hour away by train.</br>
+  <p>. . . and I hung up the phone. Immediately <code class="popup" onclick="myFunction()">I recollected<span class="popuptext" id="myPopup">Forking Path1</span></code> the voice that had spoken in German.
+In ten minutes I had developed my plan. The telephone directory gave me the name of the one person capable of passing on the information. He lived in a suburb of <a class="text" href=https://www.google.com/maps/search/suburbs+of+Fenton,+Staffordshire,+Britain/@52.9973179,-2.1773594,14z/data=!3m1!4b1>Fenton</a>, less than half an hour away by train.</br>
 </br>
 
-  I am a timorous man. I can say it now, now that I have brought my incredibly risky plan to an end. It was not easy to bring about, and I know that its execution was terrible. I did not do it for Germany - no! Such a barbarous country is of no importance to me, particularly since it had degraded me by making me become a spy. Furthermore, I knew an Englishman - a modest man - who, for me, is as great as Goethe. I did not speak with him for more than an hour, but during that time, he was Goethe.</br>
+  I am a timorous man. I can say it now, now that I have brought my incredibly risky plan to an end. It was not easy to bring about, and I know that its execution was terrible. I did not do it for <a class="text" href="https://en.wikipedia.org/wiki/History_of_Germany_during_World_War_I">Germany</a> - no! Such a barbarous country is of no importance to me, particularly since it had degraded me by making me become a spy. Furthermore, I knew an Englishman - a modest man - who, for me, is as great as Goethe. I did not speak with him for more than an hour, but during that time, he was Goethe.</br>
 </br>
 
   I carried out my plan because I felt the Chief had some fear of those of my race, of those uncountable forebears whose culmination lies in me. I wished to prove to him that a yellow man could save his armies. Besides, I had to escape the Captain. His hands and voice could, at any moment, knock and beckon at my door.</br>
 </br>
 
-Silently, I dressed, took leave of myself in the mirror, went down the stairs, sneaked a look at the quiet street, and went out. </p>
-
+Silently, I dressed, took leave of myself in the mirror, went down the stairs, sneaked a look at the quiet street, and went out.</p>
 </div>
 
+</div>
 </body>
+
+<style>
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup:hover{
+  animation: shake 1s;
+  animation-duration: 0.1s;
+}
+
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+</style>
+
+<script>
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+
 
 </html>

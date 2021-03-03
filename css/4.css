@@ -5,6 +5,20 @@ background:no-repeat center center fixed;
   background-image: url
 }
 
+code{
+  font-family: 'Rajdhani', sans-serif;
+  font-size:1.58rem;
+  color:rgb(255, 204, 0);
+}
+
+code:hover {
+        color: #898989;
+      }
+
+span{
+  font-size:1.3rem;
+}
+
 p{
   color:white;
   font-family: 'Arvo', serif;
@@ -27,7 +41,12 @@ a{
 
     a:hover {
         color: #898989;
+        text-decoration:underline;
       }
+
+.text{
+  color:#05ce78;
+}
 
 div.sticky {
   color:white;
@@ -43,7 +62,64 @@ div.sticky {
   margin-right: 6rem;
 }
 
-@media only screen and (max-width: 450px)
+
+@media only screen and (max-width: 1200px)
+    {
+p{
+  color:white;
+  font-family: 'Arvo', serif;
+  font-size:1rem;
+  word-spacing: 0.3rem;
+  margin-top:-8rem;
+  padding: 180px;
+  line-height: 28px;
+  margin-left:-1rem;
+}
+
+a{
+  color:white;
+  text-align:center; 
+  font-family: 'Rajdhani', sans-serif;
+  font-size:1.1rem;
+  text-decoration:none;
+}
+
+div.sticky {
+  color:white;
+  position: -webkit-sticky;
+  position: sticky;
+  background-color:black;
+  top: 0;
+  border: solid;
+  text-align: center;
+  padding: 30px;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  margin-right: 7.5rem;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  25% {
+    transform: translatey(20px);
+  }
+
+  50% {
+    transform: translatey(0px);
+    font-color:white;
+  }
+}
+  span{
+  font-size:1rem;
+}
+
+code{
+  font-size:1rem;
+}
+
+@media only screen and (max-width: 810px)
     {
 p{
   color:white;
@@ -75,4 +151,11 @@ div.sticky {
   margin-left: 3rem;
   margin-right: 3rem;
 }
+
+span{
+  font-size:1rem;
+}
+
+code{
+  font-size:1rem;
 }

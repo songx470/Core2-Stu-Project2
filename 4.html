@@ -27,14 +27,94 @@
 <div class="sticky"><a href="index.html">secret name of the city</a></div>
 
 <div class="puzzle">
-  <p>The Chief, however, had already solved this mystery. He knew that my problem was to shout, with my feeble voice, above the tumult of war, the name of the city called Albert, and that I had no other course open to me than to kill someone of that name. He knew that my problem was to shout, with my feeble voice, above the tumult of war, the name of the city called Albert, and that I had no other course open to me than to kill someone of that name. He does not know, for no one can, of my infinite penitence and sickness of the heart.</br>
+  <p>The Chief, however, had already solved this mystery. He knew that my problem was to shout, with my feeble voice, above the tumult of war, <code class="popup" onclick="myFunction()"> name of the city<span class="popuptext" id="myPopup">Forking Path5</span></code> called <a class="text" href="https://en.wikipedia.org/wiki/Battle_of_Albert_(1916)">Albert</a>, and that I had no other course open to me than to kill someone of that name. He knew that my problem was to shout, with my feeble voice, above the tumult of war, the name of the city called Albert, and that I had no other course open to me than to kill someone of that name. He does not know, for no one can, of my infinite penitence and sickness of the heart.</br>
 </br>
 
-  In his A History of the World War, Captain Liddell Hart reports that a planned offensive by thirteen British divisions, supported by fourteen hundred artillery pieces, against the German line at Serre-Montauban, scheduled for July 24, 1916, had to be postponed until the morning of the 29th. He comments that torrential rain caused this delay - which lacked any special significance. The following deposition, dictated by, read over, and then signed by Dr. Yu Tsun, former teacher of English at the Tsingtao Hochschule, casts unsuspected light upon this event. The first two pages are missing.</br>
-</br>
+  In his A History of the World War, Captain Liddell Hart reports that a planned offensive by thirteen British divisions, supported by fourteen hundred artillery pieces, against the German line at Serre-Montauban, scheduled for July 24, 1916, had to be postponed until the morning of the 29th. He comments that torrential rain caused this delay - which lacked any special significance. The following deposition, dictated by, read over, and then signed by Dr. Yu Tsun, former teacher of English at the Tsingtao Hochschule, casts unsuspected light upon this event. The first two pages are missing.
 </p>
 
 </div>
+
+<style>
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup:hover{
+  animation: shake 1s;
+  animation-duration: 0.1s;
+}
+
+
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 2px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+</style>
+
+<script>
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
 
 </body>
 
